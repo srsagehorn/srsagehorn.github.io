@@ -1,37 +1,57 @@
 body {
-    background-color: beige;
+    background-color: white;
+    width: 80%
+}
 
+header {
+    background-color: #E8E8E8;
 }
 
 h1 {
-    background-color : mediumaquamarine;
     height : 20px;
-    text-align: center;
+    text-align: left;
+    padding-left: 100px;
     font-size: 18px;
     font-weight: bold;
 }
 
-h2 {
+nav ul{
+    list-style-type: none;
+}
 
+nav li {
+    display: inline-block;
+    margin: auto;
+    padding: 1em;
+    color: grey;
+}
+
+nav a:hover {
+    color: black;
 }
 
 img {
-    border: mediumaquamarine solid 20px;
-    align: center;
-
-
+    display: inline-block;
 }
 
-li {
-
+h3 {
+    font-size: 18px;
 }
 
-#leftCol {
-    float: right;
-    width: 80%;
+#profilePic {
+    border: black solid 3px;
+    align: left;
 }
 
-#rightCol {
-    float: right;
-    width: 20%;
+.activePage {
+    color: black;
+}
+
+footer {
+    height: 50px;
+}
+
+footer img {
+    height: 30px;
+    width: 30px;
 }
