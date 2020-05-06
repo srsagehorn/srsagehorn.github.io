@@ -1,15 +1,25 @@
 body {
-    background-color: white;
-    font-family: Century Gothic;
+    background-color:black;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
 }
 
+
 header {
-    background-color: white;
-    /* border: black solid 2px; */
-    box-shadow: 5px 5px 5px 5px grey;
+    background-color:black;
+    box-shadow: 0px 3px 10px white;
     width: 95%;
     padding: 0%;
     margin: auto;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: lighter;
+    color:white;
+    display: inline-block;
+}
+
+header img {
+    height: 125px;
+    float: left;
 }
 
 h1 {
@@ -18,31 +28,50 @@ h1 {
     padding-left: 100px;
     font-size: 18px;
     font-weight: bold;
+    position: relative;
+    left: 40px;
+    top: 10px;
 }
 
-nav ul{
-    list-style-type: none;
+nav button {
+    font-family: 'Open Sans Condensed', sans-serif;
+    display: inline;
+    text-align: center;
+    color: white !important;
+    font-weight: bold;
+    border-width: 0px;
+    border-bottom: 1px solid white; 
+    position: relative;
+    left: 125px;
+    padding: 15px;
+    font-size: 20px;
+    background-color: black;
+    text-decoration: none;
 }
 
-nav li {
-    display: inline-block;
-    margin: auto;
-    padding: 1em;
-    color: grey;
-}
+  }
+  
+  .index, .pp, .gd, .resume {
+    position: relative;
+  }
+  .ppDDContent, .gdDDContent, .resumeDDContent{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
 
-nav a:hover {
-    color: black;
-}
-
-nav a:link {
-    border-bottom: 1px black;
-}
-
-nav a:hover {
-    background-color: tan;
-    color: whitesmoke;
-}
+  .ppDDContent a, .gdDDContent a, .resumeDDContent a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: none;
+  }}
+  
+  .ppBtn:hover .ppDDContent {display: block;}
+  .gdBtn:hover .gdDDContent {display: block;}
+  .resumeBtn:hover .resumeDDContent {display: block;}
 
 #wrapper {
     width: 85%;
@@ -53,28 +82,50 @@ img {
     display: inline-block;
 }
 
+p{
+    font-size: 16x;
+}
+
 h3 {
     font-size: 18px;
 }
 
 #profilePic {
-    border: black solid 3px;
     align: left;
 }
 
 .activePage {
-    color: black;
+    color:white;
 }
 
 footer {
     height: auto;
-    background-color: rgb(197, 199, 201);
     margin: auto;
     width: 95%;
+    display: inline-block;
 }
 
 footer img {
     height: 30px;
     width: 30px;
     padding 2px;
+    filter: grayscale(100%);
+}
+
+footer img:hover {
+    filter: grayscale(0%);
+}
+/* the logo is black so Im not sure how I want to do this */
+#gitimg :hover {
+    box-shadow: 0px 3px 10px white;
+} 
+
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer p {
+    text-align: center;
 }
