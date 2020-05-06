@@ -2,19 +2,16 @@ body {
     background-color:black;
     font-family: 'Open Sans Condensed', sans-serif;
     color: white;
+    margin: auto;
 }
 
 
 header {
     background-color:black;
-    box-shadow: 0px 3px 0px 0px white;
-    width: 95%;
-    padding: 0%;
-    margin: auto;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: lighter;
-    color:white;
+    box-shadow: 3px 3px 5px 0px white;
+    width: 100%;
     display: inline-block;
+    margin: auto;
 }
 
 header ul{
@@ -38,9 +35,8 @@ h1 {
     top: 10px;
 }
 
-/* because this is an a tag instead of div or li its making the index.html link in the logo image create the space */
+
 nav a {
-    font-family: 'Open Sans Condensed', sans-serif;
     display: inline;
     text-align: center;
     color: white !important;
@@ -48,37 +44,30 @@ nav a {
     border-width: 0px;
     border-bottom: 1px solid white; 
     position: relative;
-    top: 40px;
-    padding: 15px;
+    top: 15px;
     font-size: 20px;
-    background-color: black;
     text-decoration: none;
 }
 
 nav div {
     display: inline-block;
-    padding-left: 40px;
+    margin: 30px;
 }
 
-/* .index, .pp, .gd, .resume {
-    position: relative;
-    top: 20px;
-    display: inline-block;
-    padding-left: 15px;
-} */
 .ppBtn ul, .gdBtn ul, .resBtn ul {
     display: none;
     position: absolute;
-    min-width: 160px;
-    box-shadow: 0px 5px 8px 0px white;
+    top: 75px;
+    box-shadow: 0px 1px 2px 0px white;
     z-index: 1;
-    color:lightgray;
     text-decoration: none;
+    background-color: black;
+    padding: 0; 
 }
 
-.ppBtn li, .gdBtn li, .resBtn li {
-    padding: (12px 16px);
-    width: 180px;
+nav ul li {
+    display: block;
+    margin: 3px;
 }
 
 .ppBtn:hover ul {display: block;}
@@ -104,6 +93,10 @@ img {
     font-size: 16x;
 }
 
+#text a {
+    color: white;
+}
+
 h3 {
     font-size: 18px;
 }
@@ -120,7 +113,7 @@ footer {
     height: auto;
     margin: auto;
     width: 95%;
-    display: inline-block;
+    display: block;
 }
 
 footer img {
