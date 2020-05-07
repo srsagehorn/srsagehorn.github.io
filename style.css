@@ -35,6 +35,11 @@ h1 {
     top: 10px;
 }
 
+.navBtn {
+    position: relative;
+    top: 15px;
+    border-bottom: 1px solid white;
+}
 
 nav a {
     display: inline;
@@ -42,11 +47,13 @@ nav a {
     color: white !important;
     font-weight: bold;
     border-width: 0px;
-    border-bottom: 1px solid white; 
+    width: 160px;
     position: relative;
-    top: 15px;
     font-size: 20px;
     text-decoration: none;
+    padding-left: 14px ;
+    padding-right: 20px;
+    text-align: center;
 }
 
 nav div {
@@ -58,16 +65,25 @@ nav div {
     display: none;
     position: absolute;
     top: 75px;
-    box-shadow: 0px 1px 2px 0px white;
+    box-shadow: 0px 3px 5px 0px white;
+    height: auto;
     z-index: 1;
     text-decoration: none;
     background-color: black;
     padding: 0; 
+    min-width: 160px;
+    text-align: center;
+}
+
+.ppBtn ul li a, .gdBtn ul li a, .resBtn ul li a {
+    width: 160px !important;
 }
 
 nav ul li {
     display: block;
     margin: 3px;
+    width: 100%;
+    border-bottom: 1px solid white; 
 }
 
 .ppBtn:hover ul {display: block;}
@@ -75,6 +91,8 @@ nav ul li {
 .gdBtn:hover ul {display: block;}
 
 .resBtn:hover ul {display: block;}
+
+ul:hover ul{display: block}
 
 #wrapper {
     width: 85%;
@@ -88,7 +106,7 @@ img {
     margin-right: 10px;
 }
 
-#text{
+.indent{
     text-indent:40px ;
     font-size: 16x;
 }
@@ -116,6 +134,10 @@ footer {
     display: block;
 }
 
+h3 {
+    text-align: left;
+}
+
 footer img {
     height: 30px;
     width: 30px;
@@ -134,4 +156,5 @@ footer img:hover {
 
 footer p {
     text-align: center;
+    display: block;
 }
