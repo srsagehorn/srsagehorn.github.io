@@ -53,14 +53,22 @@ nav img {
   display: none;
 }
 /* body */
+.imgMe{
+    float: left;
+    height: 300px;
+    padding: 10px;
+}
+
+
 .indent{
     text-indent:40px ;
     font-size: 16x;
 }
 
-#text a {
+.text a {
     color: white;
 }
+
  /* footer */
 footer {
     height: auto;
@@ -69,11 +77,7 @@ footer {
     display: block;
 }
 
-h3 {
-    text-align: left;
-}
-
-footer img {
+.contactMe img, footer img {
     height: 30px;
     width: 30px;
     padding 2px;
@@ -81,7 +85,7 @@ footer img {
     float: none;
 }
 
-footer img:hover {
+.contactMe img:hover {
     filter: grayscale(0%);
 }
 /* the logo is black so Im not sure how I want to do this */
