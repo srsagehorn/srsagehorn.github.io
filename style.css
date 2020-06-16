@@ -33,6 +33,7 @@ nav img {
   border-bottom: 2px solid black;
   color: black;
   margin-left: 20px;
+  font-size: 20px;
 }
 
 .nav-link:hover {
@@ -104,8 +105,9 @@ h2 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
+  text-align: justify;
 }
 
 .indent {
@@ -126,9 +128,8 @@ footer {
   font-weight: 200;
 }
 
-.contactMe img,
-footer img {
-  height: 30px;
+.contactMe img {
+  width: 30px;
   padding: 2px;
   filter: grayscale(100%);
   float: none;
@@ -150,4 +151,9 @@ footer p {
 footer {
   position: relative;
   bottom: 1px;
+}
+
+footer img {
+  height: 30px;
+  padding: 2px;
 }
