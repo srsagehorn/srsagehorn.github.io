@@ -24,7 +24,7 @@ nav img {
   right: 100px;
 }
 
-.logonName {
+.logoName {
   position: relative;
   left: 50px;
 }
@@ -64,10 +64,12 @@ h2 {
   font-size: 40px;
   font-weight: 200;
 }
+.firstln {
+  text-align: left;
+}
 
 .secondln {
-  position: relative;
-  left: 200px;
+  text-align: right;
 }
 
 .prob {
@@ -90,12 +92,9 @@ h2 {
 }
 /* body */
 .imgMe {
-  float: left;
-  height: 400px;
+  height: 500px;
   padding: 10px;
   padding-bottom: 50px;
-  position: relative;
-  left: -100px;
 }
 
 p {
