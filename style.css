@@ -8,11 +8,11 @@ body {
 }
 /* nav */
 nav {
-  background-color: #88a2aa;
+  background-color: rgb(136, 162, 170);
 }
 
 nav img {
-  height: 125px;
+  height: 100px;
 }
 
 /* .navbar {
@@ -59,21 +59,15 @@ h1 {
 
 h2 {
   position: relative;
-  left: 200px;
-  top: 170px;
+  top: 130px;
   text-decoration: underline;
   font-size: 40px;
   font-weight: 200;
 }
 
-.firstln {
-  position: relative;
-  left: 75px;
-}
-
 .secondln {
   position: relative;
-  left: 225px;
+  left: 200px;
 }
 
 .prob {
@@ -118,16 +112,7 @@ p {
 .text a {
   color: black;
 }
-
-/* footer */
-footer {
-  height: auto;
-  margin: auto;
-  width: 95%;
-  display: block;
-  font-weight: 200;
-}
-
+/* contact me */
 .contactMe img {
   width: 30px;
   padding: 2px;
@@ -138,9 +123,47 @@ footer {
 .contactMe img:hover {
   filter: grayscale(0%);
 }
+
 /* the logo is black so Im not sure how I want to do this */
 #gitimg :hover {
   filter: drop-shadow(0px 0px 3px black);
+}
+/* portfolio */
+.title {
+  font-size: 50px;
+  font-weight: 200;
+}
+
+.colorBlock {
+  background-color: rgb(136, 162, 170);
+  height: 130px;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 25px;
+}
+
+.card {
+  width: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.portfolioCard {
+  margin-top: 20px;
+}
+
+/* footer */
+footer {
+  height: auto;
+  margin: auto;
+  width: 95%;
+  display: block;
+  font-weight: 200;
 }
 
 footer p {
