@@ -21,12 +21,12 @@ nav img {
 
 .navBtns {
   position: relative;
-  right: 100px;
+  right: 10%;
 }
 
 .logoName {
   position: relative;
-  left: 50px;
+  left: 5%;
 }
 
 .nav-link {
@@ -64,6 +64,7 @@ h2 {
   font-size: 40px;
   font-weight: 200;
 }
+
 .firstln {
   text-align: left;
 }
@@ -76,10 +77,15 @@ h2 {
   font-weight: 800;
 }
 
-.sr-only {
+/* .sr-only {
   color: black;
+} */
+h3 {
+  background-color: rgb(136, 162, 170);
+  height: 60px;
+  padding: 10px;
+  font-weight: 300;
 }
-
 .navbar-toggler {
   background-color: black;
 }
@@ -111,9 +117,88 @@ p {
 .text a {
   color: black;
 }
+
+/* portfolio */
+.title {
+  font-size: 50px;
+  font-weight: 200;
+}
+
+.portImg {
+  height: 200px;
+  /* background-color: rgb(136, 162, 170); */
+}
+
+.colorBlock {
+  background-color: rgb(136, 162, 170);
+  height: 130px;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  padding-top: 25px;
+}
+
+.card {
+  width: 100%;
+  background-color: rgb(136, 162, 170);
+  border-radius: 0;
+  border: none;
+  height: 300px;
+}
+
+.card-body {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.card-link {
+  color: #51575e;
+  border: 1px solid #6c757d;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 300;
+}
+
+.card-link:hover {
+  color: white;
+  background-color: #6c757d;
+}
+
+.portfolioCard {
+  margin-top: 40px;
+}
+/* resume */
+.resPic {
+  height: 60px;
+}
+
+.vl {
+  border-right: 4px solid #88a2aa;
+  height: 600px;
+}
+
+.btn-outline-secondary {
+  position: relative;
+  left: 50px;
+  bottom: 15px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: black;
+  border-radius: 50%;
+}
+
 /* contact me */
+.contactMe {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
 .contactMe img {
-  width: 30px;
+  height: 90px;
   padding: 2px;
   filter: grayscale(100%);
   float: none;
@@ -127,35 +212,6 @@ p {
 #gitimg :hover {
   filter: drop-shadow(0px 0px 3px black);
 }
-/* portfolio */
-.title {
-  font-size: 50px;
-  font-weight: 200;
-}
-
-.colorBlock {
-  background-color: rgb(136, 162, 170);
-  height: 130px;
-  width: 100%;
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-top: 25px;
-}
-
-.card {
-  width: 100%;
-}
-
-.card-body {
-  display: flex;
-  flex: 1 1 auto;
-}
-
-.portfolioCard {
-  margin-top: 20px;
-}
-
 /* footer */
 footer {
   height: auto;
@@ -179,3 +235,17 @@ footer img {
   height: 30px;
   padding: 2px;
 }
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1100px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+/* flex box on the tagline beside photo */

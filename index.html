@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- nav bar -->
-    <nav class="navbar navbar-expand-sm">
+    <nav class="navbar navbar-expand-lg">
       <!-- <div class="row"> -->
       <!-- (add bg-light and navbar-lightto ^) -->
       <div class="logoName navbar-text">
@@ -59,7 +59,7 @@
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
-                >Porttfolio</a
+                >Portfolio</a
               >
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">Programs</a>
@@ -89,7 +89,7 @@
     </nav>
 
     <!-- Main -->
-    <!-- about me -->
+    <!-- image and tag line -->
     <div class="container">
       <div class="row" style="margin-top: 40px;">
         <div class="col-md-4">
@@ -97,7 +97,7 @@
         </div>
         <div class="col-md-8">
           <div class="firstln">
-            <h2>Chicago based <span class="prob">problem solver</span></h2>
+            <h2>Chicago based <span class="prob"></span></h2>
           </div>
           <br />
           <div class="secondln">
@@ -105,9 +105,9 @@
           </div>
         </div>
       </div>
-      <!-- row 2 -->
+      <!-- about me -->
       <div class="row">
-        <div class="text col-md-10">
+        <div class="text">
           <h3>About Me</h3>
           <p class="indent">
             Hey! My name is Shannon. I am an avid burger eater and terrible
@@ -136,37 +136,16 @@
           <p>
             I hope you enjoy this site and getting to know me. If you have any
             questions or are interested in hiring me
-            <a href="mailto: srsagehorn@gmail.com">email</a> is the best way to
-            reach me.
+            <a
+              href="mailto: srsagehorn@gmail.com"
+              style="text-decoration: underline;"
+              >email</a
+            >
+            is the best way to reach me.
           </p>
           <p>Thanks!</p>
           <p>-Shan</p>
         </div>
-        <div class="col-md-2">
-          <div class="row">
-            <h3>Contact Me</h3>
-          </div>
-          <div class="row">
-            <div class="col-md-2 contactMe">
-              <a href="mailto: srsagehorn@gmail.com"
-                ><img src="pics/gmail.png" alt="gmail logo"
-              /></a>
-            </div>
-
-            <div class="col-md-2 contactMe">
-              <a
-                id="gitimg"
-                href="https://github.com/srsagehorn"
-                target="_blank"
-                ><img src="pics/github.png" alt="github logo"
-              /></a>
-            </div>
-
-            <div class="col-md-2 contactMe">
-              <a href="www.linkedin.com/in/shannonsagehorn" target="_blank"
-                ><img src="pics/linkedIn.png" alt="LinkedIn logo"
-              /></a>
-            </div>
           </div>
         </div>
       </div>
@@ -183,9 +162,9 @@
             <div class="col-md-4">
               <div class="img-square-wrapper">
                 <img
-                  src="pics/codewars.png"
+                  src="pics/code.png"
                   alt="screenshot of codewars account stats"
-                  class="img-fluid"
+                  class="img-fluid portImg"
                 />
               </div>
             </div>
@@ -204,7 +183,7 @@
                 href="https://github.com/srsagehorn/codeWars100Days"
                 target="_blank"
                 class="card-link"
-                >Github Repository</a
+                >Github Repo</a
               >
             </div>
           </div>
@@ -219,7 +198,7 @@
                 <img
                   src="pics/fflLogo.png"
                   alt="portfolio piece"
-                  class="img-fluid"
+                  class="img-fluid portImg"
                 />
               </div>
             </div>
@@ -236,7 +215,7 @@
                 href="https://foreverforlove.com"
                 target="_blank"
                 class="card-link"
-                >visit site</a
+                >Visit Site</a
               >
             </div>
           </div>
@@ -251,7 +230,7 @@
                 <img
                   src="pics/eeiLogo.png"
                   alt="portfolio piece"
-                  class="img-fluid"
+                  class="img-fluid portImg"
                 />
               </div>
             </div>
@@ -270,106 +249,118 @@
                 href="https://www.stlengineer.com"
                 target="_blank"
                 class="card-link"
-                >visit site</a
+                >Visit Site</a
               >
             </div>
           </div>
         </div>
       </div>
+      <!-- HoreiSEOn -->
       <div class="row portfolioCard">
         <div class="card">
           <div class="card-body">
             <div class="col-md-4">
               <div class="img-square-wrapper">
                 <img
-                  src="https://via.placeholder.com/300"
+                  src="pics/musicnMovies.png"
                   alt="portfolio piece"
-                  class="img-fluid"
+                  class="img-fluid portImg"
                 />
               </div>
             </div>
             <div class="col-md-8">
-              <h5 class="card-title">Algorithm Repository</h5>
+              <h5 class="card-title">Movie Soundtrack Finder</h5>
               <p class="card-text">
-                This repository is representative of my algorithm coding skills.
-                The repository features over 100 algorithm problems from
-                CodeWars Katas. Each solution is presented in three different
-                languages; Python, JavaScript and Java. The repository is
-                expertly organized with commented code that walks you through
-                each solution and shows progression through more and more
-                difficult problems.
+                This application is a quick and easy way to look up movies to
+                see their ratings, trailers, decriptions, actors and more. The
+                application also pulls up the movie soundtrack with each artist
+                and song as well as links to listen to the music!
               </p>
               <a
-                href="https://github.com/srsagehorn/codeWars100Days"
+                href="https://srsagehorn.github.io/sagehornHW5/"
                 target="_blank"
                 class="card-link"
-                >Github Repository</a
+                >Visit Application</a
+              >
+              <a
+                href="https://github.com/srsagehorn/sagehornHW5"
+                target="_blank"
+                class="card-link"
+                >GitHub Repo</a
               >
             </div>
           </div>
         </div>
       </div>
+      <!-- calendar app -->
       <div class="row portfolioCard">
         <div class="card">
           <div class="card-body">
             <div class="col-md-4">
               <div class="img-square-wrapper">
                 <img
-                  src="https://via.placeholder.com/300"
+                  src="pics/cal.png"
                   alt="portfolio piece"
-                  class="img-fluid"
+                  class="img-fluid portImg"
                 />
               </div>
             </div>
             <div class="col-md-8">
-              <h5 class="card-title">Algorithm Repository</h5>
+              <h5 class="card-title">Calendar and Scheduling Application</h5>
               <p class="card-text">
-                This repository is representative of my algorithm coding skills.
-                The repository features over 100 algorithm problems from
-                CodeWars Katas. Each solution is presented in three different
-                languages; Python, JavaScript and Java. The repository is
-                expertly organized with commented code that walks you through
-                each solution and shows progression through more and more
-                difficult problems.
+                This is a calendar app updates on the hour. Users are able to
+                add and edit events and check off to-dos as they go. This app is
+                unique because of its extremely intuitive and user-friendly
+                interface. Users can merge calendars and create recurring
+                events.
               </p>
+              <a
+              href="https://srsagehorn.github.io/sagehornHW5/"
+              target="_blank"
+              class="card-link"
+              >Visit Application</a
+            >
               <a
                 href="https://github.com/srsagehorn/codeWars100Days"
                 target="_blank"
                 class="card-link"
-                >Github Repository</a
+                >Github Repo</a
               >
             </div>
           </div>
         </div>
       </div>
+      <!-- weather app -->
       <div class="row portfolioCard">
         <div class="card">
           <div class="card-body">
             <div class="col-md-4">
               <div class="img-square-wrapper">
                 <img
-                  src="https://via.placeholder.com/300"
+                  src="pics/weather.png"
                   alt="portfolio piece"
-                  class="img-fluid"
+                  class="img-fluid portImg"
                 />
               </div>
             </div>
             <div class="col-md-8">
-              <h5 class="card-title">Algorithm Repository</h5>
+              <h5 class="card-title">Weather Application</h5>
               <p class="card-text">
-                This repository is representative of my algorithm coding skills.
-                The repository features over 100 algorithm problems from
-                CodeWars Katas. Each solution is presented in three different
-                languages; Python, JavaScript and Java. The repository is
-                expertly organized with commented code that walks you through
-                each solution and shows progression through more and more
-                difficult problems.
+                This application uses a third party API to recieve weather
+                information for any city, in real time. Users can chose from
+                hourly, 3-day and 10-day forecasts.
               </p>
+              <a
+              href="https://srsagehorn.github.io/sagehornHW5/"
+              target="_blank"
+              class="card-link"
+              >Visit Application</a
+            >
               <a
                 href="https://github.com/srsagehorn/codeWars100Days"
                 target="_blank"
                 class="card-link"
-                >Github Repository</a
+                >Github Repo</a
               >
             </div>
           </div>
@@ -378,15 +369,83 @@
     </div>
     <!-- resume -->
     <div class="colorBlock">
-      <span class="title">RESUME</span>
+      <span class="title">RESUME</span><button type="button" class="btn btn-outline-secondary">PDF</button>
+    </div>
+    <div class="container">
+      <div class = "row">
+      <div class = "col-md-2">
+        <div class = "vl">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+      <div class = "col-md-10">
+        <h5> Education</h5>
+        <div class = "row">
+
+          <img
+          class="resPic"
+          src="pics/nu.png"
+          alt="Northwestern University Logo"
+          />
+          <p class="resume">
+            northwestern.graduateCertificate ("fullstackWebDevelopment")
+            <br />period = "April, 2020" + "to" +  "October, 2020"
+            </p>
+        </div>
+        <div class = "row">
+          <img
+        class="resPic"
+        src="pics/asu.png"
+        alt="Arizona State University Logo"
+        />
+        </div>
+        <h5>Involvement</h5>
+        <div class = "row">
+          <img class="resPic" src="pics/akpsi.png" alt="Alpha Kappa Psi logo" />
+        </div>
+        <h5>Work Experience</h5>
+        <div class = "row">
+          <img class="resPic" src="pics/vmm.png" alt="Vision Maker Media Logo" />
+        </div>
+    </div>
+  </div>
+    </div>
+
+    <!-- contact me -->
+    <div class="colorBlock">
+      <span class="title">CONTACT ME</span>
+    </div>
+    <div class = "container">
+      <div class="row">
+        <div class="col-md-4 contactMe">
+          <a href="mailto: srsagehorn@gmail.com"
+            ><img src="pics/gmail.png" alt="gmail logo"
+          /></a>
+        </div>
+
+        <div class="col-md-4 contactMe">
+          <a
+            id="gitimg"
+            href="https://github.com/srsagehorn"
+            target="_blank"
+            ><img src="pics/github.png" alt="github logo"
+          /></a>
+        </div>
+        <div class="col-md-4 contactMe">
+          <a href="www.linkedin.com/in/shannonsagehorn" target="_blank"
+            ><img src="pics/linkedIn.png" alt="LinkedIn logo"
+          /></a>
+        </div>
+      </div>
     </div>
 
     <!-- footer -->
     <footer>
       <p>
         <img src="pics/slogo.png" /><br />
-        Shannon Sagehorn <br />
-        Copyright &copy; 2020 - All Rights Reserved.
+        Shannon Sagehorn | Copyright &copy; 2020 - All Rights Reserved.
       </p>
     </footer>
 
@@ -406,18 +465,9 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
 
-<!-- contact me on the right side
-nav bar drop downs on hover
-nav bar a links longer?
-fix logo
-cut out photo
-animate Shannon Sagehorn on scroll -->
-
-<!-- align nav btns
-make p text larger
-blacken the photo/find new photo
-recenter chicago problem solver
+<!-- 
 change font -->
