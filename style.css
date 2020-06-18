@@ -12,14 +12,36 @@ p {
   font-weight: 300;
   font-style: normal;
 }
+
 /* nav */
 nav {
   background-color: rgb(136, 162, 170);
 }
 
-nav img {
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  padding: 0;
+}
+
+.pageContent {
+  position: relative;
+  top: 130px;
+}
+
+.navImg {
   height: 100px;
 }
+
+/* .navHidden {
+  font-size: 50px;
+  position: relative;
+  left: 180px;
+  top: -1px;
+  height: 70px;
+} */
 
 /* .navbar {
   box-shadow: 3px 3px 2px 0px #88a2aa;
@@ -32,7 +54,7 @@ nav img {
 
 .logoName {
   position: relative;
-  left: 5%;
+  left: 10%;
 }
 
 .nav-link {
@@ -161,7 +183,7 @@ p {
   width: 100%;
   border-radius: 0;
   border: none;
-  height: 320px;
+  height: 350px;
 }
 
 .card-body {
