@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="https://use.typekit.net/vkm5jcx.css" />
 
     <link rel="stylesheet" href="style.css" />
+
+    <script src="https://use.fontawesome.com/899f3426f8.js"></script>
+
+    <script src="script.js"></script>
   </head>
   <body>
     <!-- nav bar -->
@@ -48,7 +52,7 @@
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="index.html"
-                >Home <span class="sr-only">(current)</span></a
+                >HOME <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item dropdown">
@@ -59,7 +63,7 @@
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
-                >Portfolio</a
+                >PORTFOLIO</a
               >
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">Programs</a>
@@ -75,7 +79,7 @@
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
-                >Resume</a
+                >RESUME</a
               >
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">View Online</a>
@@ -144,7 +148,7 @@
             is the best way to reach me.
           </p>
           <p>Thanks!</p>
-          <p>-Shan</p>
+          <p class = "addBtmPadding">-Shan</p>
         </div>
           </div>
         </div>
@@ -154,6 +158,7 @@
     <div class="colorBlock">
       <span class="title">PORTFOLIO</span>
     </div>
+    <div class = "portContainer">
     <div class="container">
       <!-- algo -->
       <div class="row portfolioCard">
@@ -215,7 +220,7 @@
                 href="https://foreverforlove.com"
                 target="_blank"
                 class="card-link"
-                >Visit Site</a
+                >Site Coming 08/2020!</a
               >
             </div>
           </div>
@@ -249,7 +254,7 @@
                 href="https://www.stlengineer.com"
                 target="_blank"
                 class="card-link"
-                >Visit Site</a
+                >Site Coming 07/2020!</a
               >
             </div>
           </div>
@@ -367,9 +372,10 @@
         </div>
       </div>
     </div>
+  </div>
     <!-- resume -->
-    <div class="colorBlock">
-      <span class="title">RESUME</span><button type="button" class="btn btn-outline-secondary">PDF</button>
+    <div class="wcolorBlock">
+      <span class="title">RESUME</span><button type="button" class="btn btn-outline-secondary">PDF<i class="fas fa-file-download"></i></button>
     </div>
     <div class="container">
       <div class = "row">
@@ -377,46 +383,110 @@
         <div class = "vl">
           <span class="dot"></span>
           <span class="dot"></span>
-          <span class="dot"></span>
+          
         </div>
       </div>
       <div class = "col-md-10">
-        <h5> Education</h5>
-        <div class = "row">
-
-          <img
-          class="resPic"
-          src="pics/nu.png"
-          alt="Northwestern University Logo"
-          />
-          <p class="resume">
-            northwestern.graduateCertificate ("fullstackWebDevelopment")
-            <br />period = "April, 2020" + "to" +  "October, 2020"
-            </p>
-        </div>
-        <div class = "row">
+        <div class = "h6"> Education</div>
+        <!-- ASU -->
+    <div class = "row resBlock">
+          <div class = "col-md-2  resIcon">
           <img
         class="resPic"
         src="pics/asu.png"
         alt="Arizona State University Logo"
         />
-        </div>
-        <h5>Involvement</h5>
+      </div>
+      <div class = "col-md-10">
+        <p class="dates">
+          August 2019 - December 2020
+          </p>
+        <p class = "eduHead">Arizona State University</p>
+        <p class = "eduHead2">Bachelor of Science in Graphic Information Technology</p>
+        <p class = "info">Primary Focus - Front-End Web Design</p>
+        <p class = "info">Secondary Focus - Communication Studies</p>
+        <p class = "info">GPA - 3.91</p>
+        <span class = "cskill">HTML/CSS</span>
+        <span class = "cskill">JavaScript</span>
+        <span class = "gdskill">Photoshop</span>
+        <span class = "gdskill">Illusttrator</span>
+        <span class = "gdskill">After Effects</span>
+        <span class = "gdskill">Premier Pro</span>
+        <span class = "gdskill">Light Room</span>
+    </div>
+  </div>
+  <!-- northwestern -->
+  <div class = "row resBlock">
+    <div class = "col-md-2 resIcon">
+    <img
+    class="resPic"
+    src="pics/nu.png"
+    alt="Northwestern University Logo"
+    />
+  </div>
+    <div class = "col-md-10">
+      <p class="dates">
+        April 2020 - October 2020
+        </p>
+    <p class = "eduHead">Northwestern University</p>
+    <p class = "eduHead2">Graduate Certificate - Full Stack Development</p>
+    <span class = "cskill">Python</span>
+    <span class = "cskill">Java</span>
+    <span class = "cskill">JavaScript</span>
+    <span class = "cskill">jQuery</span>
+    <span class = "cskill">Ajax/APIs</span>
+    <span class = "cskill">JSON</span>
+    <span class = "cskill">Bootstrap</span>
+    <span class = "cskill">Visual Studio</span>
+    <span class = "cskill">Git/GitHub</span>
+    <span class = "cskill">MongoDB</span>
+    <span class = "cskill">HTML/CSS</span>
+    <span class = "cskill">Node.js</span>
+    <span class = "cskill">Jest</span>
+    <span class = "cskill">MySQL</span>
+    <span class = "cskill">React</span>
+  </div>
+</div>
+<!-- Nebraska -->
+  <div class = "row resBlock">
+    <div class = "col-md-2  resIcon">
+    <img
+    class="resPic"
+    src="pics/nebraska.png"
+    alt="University of Nebraska - Lincoln"
+  />
+</div>
+
+<div class = "col-md-10">
+  <p class="dates">
+    August 2017 - May 2019
+    </p>
+  <p class = "eduHead">University of Nebraska - Lincoln</p>
+</div>
+</div>
+        <div class = "h6">Involvement</div>
         <div class = "row">
           <img class="resPic" src="pics/akpsi.png" alt="Alpha Kappa Psi logo" />
         </div>
-        <h5>Work Experience</h5>
+        <div class = "h6">Work Experience</div>
+        <img
+        class="resPic"
+        src="pics/nebraska.png"
+        alt="University of Nebraska - Lincoln"
+        />
         <div class = "row">
           <img class="resPic" src="pics/vmm.png" alt="Vision Maker Media Logo" />
         </div>
+      </div>
     </div>
   </div>
     </div>
 
     <!-- contact me -->
     <div class="colorBlock">
-      <span class="title">CONTACT ME</span>
+      <span class="title">LET'S TALK!</span>
     </div>
+    <div class = "contactContainer">
     <div class = "container">
       <div class="row">
         <div class="col-md-4 contactMe">
@@ -440,6 +510,7 @@
         </div>
       </div>
     </div>
+  </div>
 
     <!-- footer -->
     <footer>
@@ -465,7 +536,6 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
   </body>
 </html>
 

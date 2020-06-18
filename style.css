@@ -6,6 +6,12 @@ body {
   color: black;
   margin: auto;
 }
+
+p {
+  font-family: sofia-pro-soft, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
 /* nav */
 nav {
   background-color: rgb(136, 162, 170);
@@ -30,10 +36,10 @@ nav img {
 }
 
 .nav-link {
-  border-bottom: 2px solid black;
   color: black;
   margin-left: 20px;
   font-size: 20px;
+  font-weight: 400;
 }
 
 .nav-link:hover {
@@ -81,11 +87,18 @@ h2 {
   color: black;
 } */
 h3 {
-  background-color: rgb(136, 162, 170);
+  border-bottom: solid 3px rgb(136, 162, 170);
   height: 60px;
   padding: 10px;
-  font-weight: 300;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 34px;
 }
+
+.addBtmPadding {
+  padding-bottom: 40px;
+}
+
 .navbar-toggler {
   background-color: black;
 }
@@ -99,14 +112,13 @@ h3 {
 /* body */
 .imgMe {
   height: 500px;
-  padding: 10px;
+  /* padding: 10px; */
   padding-bottom: 50px;
 }
 
 p {
   font-size: 20px;
   font-weight: 300;
-  text-align: justify;
 }
 
 .indent {
@@ -134,17 +146,22 @@ p {
   height: 130px;
   width: 100%;
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 15px;
+  padding-top: 25px;
+}
+
+.wcolorBlock{
+  background-color: white);
+  height: 130px;
+  width: 100%;
+  text-align: center;
   padding-top: 25px;
 }
 
 .card {
   width: 100%;
-  background-color: rgb(136, 162, 170);
   border-radius: 0;
   border: none;
-  height: 300px;
+  height: 320px;
 }
 
 .card-body {
@@ -152,12 +169,21 @@ p {
   flex: 1 1 auto;
 }
 
+.card-title {
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 26px;
+  padding-bottom: 10px;
+}
+
 .card-link {
-  color: #51575e;
-  border: 1px solid #6c757d;
+  color: black;
+  background-color: rgb(172, 203, 213);
   padding: 10px;
   border-radius: 5px;
   font-weight: 300;
+  box-shadow: 2px 2px 1px rgb(101, 100, 100);
 }
 
 .card-link:hover {
@@ -166,7 +192,13 @@ p {
 }
 
 .portfolioCard {
-  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.portContainer,
+.contactContainer {
+  background-color: rgb(136, 162, 170);
+  padding-bottom: 40px;
 }
 /* resume */
 .resPic {
@@ -174,8 +206,8 @@ p {
 }
 
 .vl {
-  border-right: 4px solid #88a2aa;
-  height: 600px;
+  border-left: 4px solid #88a2aa;
+  height: 1500px;
 }
 
 .btn-outline-secondary {
@@ -189,6 +221,68 @@ p {
   width: 15px;
   background-color: black;
   border-radius: 50%;
+}
+
+.h6 {
+  font-weight: 400;
+  font-size: 32px;
+  background-color: rgb(136, 162, 170);
+  width: 100%;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.eduHead {
+  font-size: 32px;
+}
+
+.eduHead2 {
+  color: #51575e;
+  font-size: 24px;
+}
+
+.dates {
+  font-size: 15px;
+}
+
+.gdskill {
+  color: black;
+  border: solid 2px rgba(0, 123, 70, 0.303);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 5px;
+  font-weight: 300;
+  margin: 5px;
+  display: inline-block;
+  font-size: 12px;
+}
+.cskill {
+  color: black;
+  border: solid 2px rgba(0, 0, 255, 0.351);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 5px;
+  font-weight: 300;
+  margin: 5px;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.resBlock {
+  margin-top: 80px;
+}
+
+.resIcon {
+  text-align: center;
+}
+
+.info {
+  font-size: 14px;
 }
 
 /* contact me */
