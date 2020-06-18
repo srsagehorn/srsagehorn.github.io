@@ -15,9 +15,9 @@ setTimeout(function () {
 }, 500);
 
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-window.onscroll = function () {
-  scrollFunction();
-};
+// window.onscroll = function () {
+//   scrollFunction();
+// };
 // console.log($(window).scrollTop());
 // function scrollFunction() {
 //   if ($("body").scrollTop > 50 || document.documentElement.scrollTop > 50) {

@@ -54,7 +54,7 @@ nav {
 
 .logoName {
   position: relative;
-  left: 10%;
+  left: 5%;
 }
 
 .nav-link {
@@ -105,9 +105,6 @@ h2 {
   font-weight: 800;
 }
 
-/* .sr-only {
-  color: black;
-} */
 h3 {
   border-bottom: solid 3px rgb(136, 162, 170);
   height: 60px;
@@ -145,7 +142,6 @@ p {
 
 .indent {
   text-indent: 40px;
-  font-size: 16x;
 }
 
 .text a {
@@ -164,7 +160,7 @@ p {
 }
 
 .colorBlock {
-  background-color: rgb(136, 162, 170);
+  background-color: white;
   height: 130px;
   width: 100%;
   text-align: center;
@@ -219,17 +215,24 @@ p {
 
 .portContainer,
 .contactContainer {
-  background-color: rgb(136, 162, 170);
   padding-bottom: 40px;
 }
 /* resume */
+
+.resume {
+  position: relative;
+  left: -70px;
+}
 .resPic {
   height: 60px;
+  position: relative;
+  top: 30px;
 }
 
 .vl {
   border-left: 4px solid #88a2aa;
-  height: 1500px;
+  height: 2500px;
+  margin-bottom: 40px;
 }
 
 .btn-outline-secondary {
@@ -241,8 +244,12 @@ p {
 .dot {
   height: 15px;
   width: 15px;
-  background-color: black;
+  border: rgb(136, 162, 170) solid 2px;
+  background-color: white;
   border-radius: 50%;
+  position: absolute;
+  left: -110px;
+  top: 35px;
 }
 
 .h6 {
@@ -250,13 +257,14 @@ p {
   font-size: 32px;
   background-color: rgb(136, 162, 170);
   width: 100%;
-  padding: 20px;
+  padding: 15px;
   margin-top: 40px;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 .eduHead {
-  font-size: 32px;
+  font-size: 30px;
+  /* margin-bottom:5px ; */
 }
 
 .eduHead2 {
@@ -265,14 +273,17 @@ p {
 }
 
 .dates {
-  font-size: 15px;
+  font-size: 14px;
+  /* margin-bottom: 0;
+  position: relative; */
+  /* left: 275px; */
 }
 
 .gdskill {
   color: black;
-  border: solid 2px rgba(0, 123, 70, 0.303);
-  padding-top: 5px;
-  padding-bottom: 5px;
+  border: solid 2px rgba(0, 0, 255, 0.351);
+  padding-top: 3px;
+  padding-bottom: 3px;
   padding-left: 7px;
   padding-right: 7px;
   border-radius: 5px;
@@ -283,9 +294,23 @@ p {
 }
 .cskill {
   color: black;
-  border: solid 2px rgba(0, 0, 255, 0.351);
-  padding-top: 5px;
-  padding-bottom: 5px;
+  border: solid 2px rgba(205, 1, 1, 0.481);
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 5px;
+  font-weight: 300;
+  margin: 5px;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.skill {
+  color: black;
+  border: solid 2px rgba(170, 0, 255, 0.707);
+  padding-top: 3px;
+  padding-bottom: 3px;
   padding-left: 7px;
   padding-right: 7px;
   border-radius: 5px;
@@ -296,7 +321,7 @@ p {
 }
 
 .resBlock {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .resIcon {
@@ -314,10 +339,9 @@ p {
 }
 
 .contactMe img {
-  height: 90px;
+  height: 50px;
   padding: 2px;
   filter: grayscale(100%);
-  float: none;
 }
 
 .contactMe img:hover {
@@ -348,8 +372,8 @@ footer {
 }
 
 footer img {
-  height: 30px;
-  padding: 2px;
+  height: 40px;
+  margin: 5px;
 }
 
 @media (max-width: 1200px) {
