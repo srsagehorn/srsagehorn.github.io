@@ -13,6 +13,13 @@ p {
   font-style: normal;
 }
 
+.fade {
+  margin: 50px;
+  padding: 50px;
+  background-color: lightgreen;
+  opacity: 1;
+}
+
 /* nav */
 nav {
   background-color: rgb(136, 162, 170);
@@ -20,10 +27,11 @@ nav {
 
 .navbar {
   position: fixed;
-  top: 0;
+  top: -60px;
   width: 100%;
   z-index: 9999;
   padding: 0;
+  padding-top: 60px;
 }
 
 .pageContent {
@@ -35,16 +43,16 @@ nav {
   height: 100px;
 }
 
+.navImg:hover {
+  filter: invert(100%);
+}
+
 /* .navHidden {
   font-size: 50px;
   position: relative;
   left: 180px;
   top: -1px;
   height: 70px;
-} */
-
-/* .navbar {
-  box-shadow: 3px 3px 2px 0px #88a2aa;
 } */
 
 .navBtns {
@@ -60,29 +68,31 @@ nav {
 .nav-link {
   color: black;
   margin-left: 20px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
 }
 
 .nav-link:hover {
-  color: rgb(79, 79, 79);
+  color: white;
 }
 
 .navbar-brand {
   color: black;
 }
 
-.navbar-brand:hover {
-  color: rgb(79, 79, 79);
+.name:hover {
+  color:white;
+  text-decoration: none;
 }
 
-h1 {
-  font-size: 60px;
+.name {
+  font-size: 50px;
   display: inline-block;
   position: relative;
   top: 15px;
   padding-left: 10px;
   font-weight: 200;
+  color: black;
 }
 
 h2 {
@@ -123,11 +133,9 @@ h3 {
 }
 
 .active {
+  color: white;
 }
 
-.dropdown-toggle::after {
-  display: none;
-}
 /* body */
 .imgMe {
   height: 500px;
@@ -213,8 +221,7 @@ p {
   margin-bottom: 40px;
 }
 
-.portContainer,
-.contactContainer {
+.portContainer {
   padding-bottom: 40px;
 }
 /* resume */
@@ -249,7 +256,7 @@ p {
   border-radius: 50%;
   position: absolute;
   left: -110px;
-  top: 35px;
+  top: 50px;
 }
 
 .h6 {
@@ -348,6 +355,14 @@ p {
   filter: grayscale(0%);
 }
 
+.contactContainer {
+  background-color: black;
+  position: relative;
+  bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 /* the logo is black so Im not sure how I want to do this */
 #gitimg :hover {
   filter: drop-shadow(0px 0px 3px black);
@@ -359,6 +374,11 @@ footer {
   width: 95%;
   display: block;
   font-weight: 200;
+  color: white;
+}
+
+.footerLnk {
+  color: white;
 }
 
 footer p {
@@ -374,6 +394,7 @@ footer {
 footer img {
   height: 40px;
   margin: 5px;
+  filter: invert(100%);
 }
 
 @media (max-width: 1200px) {
