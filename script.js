@@ -13,3 +13,8 @@ function typeWriter() {
 setTimeout(function () {
   typeWriter();
 }, 500);
+
+$("#download").on("click", function (e) {
+  e.preventDefault();
+  window.location.href = "downloads/res.pdf";
+});

@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/vkm5jcx.css" />
 
     <link rel="stylesheet" href="style.css" />
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/899f3426f8.js"></script>
 
     <script src="script.js"></script>
@@ -51,18 +51,18 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">HOME</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="resume.html"
-                >RESUME <span class="sr-only">(current)</span></a
+                >Resume <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="contact.html">CONTACT ME</a>
+              <a class="nav-link" href="contact.html">Contact Me</a>
             </li>
           </ul>
         </div>
@@ -75,21 +75,21 @@
       <!-- resume -->
       <div class="wcolorBlock">
         <span class="title">RESUME</span
-        ><button type="button" class="btn btn-outline-secondary">
-          PDF<i class="fas fa-file-download"></i>
+        >
+      <button type="button" class="btn btn-outline-secondary" id = "download">
+          PDF<i class="fa fa-download"></i>
         </button>
       </div>
-      <div class="container">
+      <div class="container resumeContainer">
         <div class="row">
-          <div class="col-md-2">
+          <!-- <div class="col-md-2">
             <div class="vl"></div>
-          </div>
-          <div class="col-md-10 resume">
+          </div> -->
+          <div class="col-md-12 resume">
             <div class="h6">EDUCATION</div>
             <!-- ASU -->
             <div class="row resBlock">
               <div class="col-md-2 resIcon">
-                <span class="dot"></span>
                 <img
                   class="resPic"
                   src="pics/asu.png"
@@ -119,7 +119,6 @@
             <!-- northwestern -->
             <div class="row resBlock">
               <div class="col-md-2 resIcon">
-                <span class="dot"></span>
                 <img
                   class="resPic"
                   src="pics/nu.png"
@@ -154,7 +153,6 @@
             <!-- Nebraska -->
             <div class="row resBlock">
               <div class="col-md-2 resIcon">
-                <span class="dot"></span>
                 <img
                   class="resPic"
                   src="pics/nebraska.png"
@@ -162,7 +160,7 @@
                 />
               </div>
 
-              <div class="col-md-10">
+              <div class="col-md-10 neb">
                 <p class="dates">
                   August 2017 - May 2019
                 </p>
@@ -172,7 +170,6 @@
             <div class="h6">INVOLVEMENT & AWARDS</div>
             <div class="row resBlock">
               <div class="col-md-2 resIcon">
-                <span class="dot"></span>
                 <img
                   class="resPic"
                   src="pics/asu.png"
@@ -190,7 +187,6 @@
             <!-- AKPsi -->
             <div class="row resBlock">
               <div class="col-md-2 resIcon">
-                <span class="dot"></span>
                 <img
                   class="resPic"
                   src="pics/akpsi.png"
@@ -210,7 +206,6 @@
             <!-- Kappa Delta -->
             <div class="row resBlock">
               <div class="col-md-2 resIcon">
-                <span class="dot"></span>
                 <img class="resPic" src="pics/kd.png" alt="Kappa Delta logo" />
               </div>
               <div class="col-md-10">
@@ -222,7 +217,6 @@
             </div>
             <div class="row resBlock">
               <div class="col-md-2 resIcon">
-                <span class="dot"></span>
                 <img
                   class="resPic"
                   src="pics/nebraska.png"
@@ -243,7 +237,6 @@
             <div class="h6">WORK EXPERIENCE</div>
             <div class="row resBlock">
               <div class="col-md-2 resIcon">
-                <span class="dot"></span>
                 <img
                   class="resPic"
                   src="pics/vmm.png"
@@ -265,7 +258,6 @@
             </div>
             <div class="row resBlock">
               <div class="col-md-2 resIcon">
-                <span class="dot"></span>
                 <img
                   class="resPic"
                   src="pics/nebraska.png"
@@ -291,7 +283,7 @@
   
               <p>
                 <img src="pics/slogo.png" /><br />
-                Shannon Sagehorn | Copyright &copy; 2020 - All Rights Reserved.
+                Shannon Sagehorn | Copyright &copy; 2020 - All Rights Reserved
               </p>
   
           </div>

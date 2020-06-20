@@ -79,74 +79,46 @@
     <!-- Main -->
     
     <main class = "pageContent">
-      <!-- image and tag line -->
-    <div class="container">
-      <div class="row" style="margin-top: 40px;">
-        <div class="col-md-4">
-          <img class="imgMe" src="pics/me2.jpg" alt="portrait of Shannon" />
-        </div>
-        <div class="col-md-8">
-          <div class="firstln">
-            <h2>Chicago based <span class="prob"></span></h2>
-          </div>
-          <br />
-          <div class="secondln">
-            <h2>and Full-Stack Engineer.</h2>
-          </div>
-        </div>
-      </div>
-      <!-- about me -->
-      <div class="row">
-        <div class="text">
-          <h3>About Me</h3>
-          <p class="indent">
-            Hey! My name is Shannon. I am an avid burger eater and terrible
-            driver. I never remember my reusable bags and physically can’t walk
-            in a straight line. Now that you know a little about my strengths,
-            onto the more important things; above all, I am a problem solver.
-            Puzzles, logic games, and algorithm problems, are right up my alley.
-            At the core of problem solving is being a constant student. I love
-            staying on top of new technologies and learning new languages.
-            Finding out why something does or doesn’t work is so exciting!
-          </p>
-          <p class="indent">
-            Like any other indecisive millennial, I wanted to find a career that
-            was challenging and fulfilling. Software engineering was the perfect
-            place to combine my love for design and creativity with problem
-            solving and tech. Now I get to create beautifully crafted code to
-            help businesses thrive and call it work (but it’s really just fun).
-          </p>
-
-          <p class="indent">
-            I am a recent graduate of the Full-Stack development program at
-            Northwestern and graduated Summa Cum Laude from Arizona State
-            University with a Bachelor of Science in Graphic Information
-            Technology.
-          </p>
-          <p>
-            I hope you enjoy this site and getting to know me. If you have any
-            questions or are interested in hiring me
-            <a
-              href="mailto: srsagehorn@gmail.com"
-              style="text-decoration: underline;"
-              >email</a
-            >
-            is the best way to reach me.
-          </p>
-          <p>Thanks!</p>
-          <p class = "addBtmPadding">-Shan</p>
-        </div>
+      <div class = "container contactForm">
+      <!-- <div class = "col-md-10"> -->
+        <h1>Let's Talk!</h1>
+      <form>
+        <div class="form-group">
+          <div class="row">
+            <div class="col">
+              <label for="exampleFormControlInput1">Name</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="text" class="form-control">
+            </div>
           </div>
         </div>
-      </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn contactBtn" >Submit</button>
+      </form>
     </div>
-    <!-- contact me -->
-
+    <div class = "col contactIcons">
+      <h1>Let's Connect!</h1>
+    <a href = "https://github.com/srsagehorn" target = "_blank"><img class = "contactImg" id = "gitimg" src="pics/github.png" alt="Github Logo"></a>
+    <a href = "https://www.linkedin.com/in/shannonsagehorn" target = "_blank">
+    <img class = "contactImg" src="pics/linkedIn.png" alt="Linked In Logo"></a>
+    <a href = "mailto:srsagehorn@gmail.com" target = "_blank">
+    <img class = "contactImg" src="pics/gmail.png" alt="Gmail Logo"></a>
+    <a href = "https://www.facebook.com/shannon.sagehorn" target = "_blank">
+    <img class = "contactImg" src="pics/fb.png" alt="facebook Logo"></a>
+    <a href = "https://www.instagram.com/shannanagins_/" target = "_blank">
+    <img class = "contactImg" src="pics/insta.png" alt="Instagram logo"></a>
+  </div>
+</main>
 
     <!-- footer -->
     <footer>
-      <div class = "contactContainer">
-
+      <div class = "contactContainer contactFooter">
             <p>
               <img src="pics/slogo.png" /><br />
               Shannon Sagehorn | Copyright &copy; 2020 - All Rights Reserved
@@ -156,7 +128,6 @@
       </div>
     </div>
     </footer>
-  </main>
     <!-- import JS -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

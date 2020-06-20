@@ -205,7 +205,7 @@ p {
 
 .card-link {
   color: black;
-  background-color: rgb(172, 203, 213);
+  background-color: rgb(180, 213, 223);
   padding: 10px;
   border-radius: 5px;
   font-weight: 300;
@@ -217,6 +217,10 @@ p {
   background-color: #6c757d;
 }
 
+i {
+  padding-left: 5px;
+}
+
 .portfolioCard {
   margin-bottom: 40px;
 }
@@ -224,21 +228,24 @@ p {
 .portContainer {
   padding-bottom: 40px;
 }
-/* resume */
 
-.resume {
-  position: relative;
-  left: -70px;
+.leave {
+  height: 13px;
 }
+/* resume */
 .resPic {
   height: 60px;
   position: relative;
   top: 30px;
 }
 
+.neb {
+  margin-bottom: 40px;
+}
+
 .vl {
   border-left: 4px solid #88a2aa;
-  height: 2500px;
+  height: 100%;
   margin-bottom: 40px;
 }
 
@@ -261,17 +268,16 @@ p {
 
 .h6 {
   font-weight: 400;
-  font-size: 32px;
+  font-size: 38px;
   background-color: rgb(136, 162, 170);
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   margin-top: 40px;
-  /* margin-bottom: 40px; */
 }
 
 .eduHead {
   font-size: 30px;
-  /* margin-bottom:5px ; */
+  margin-bottom:5px ;
 }
 
 .eduHead2 {
@@ -281,9 +287,7 @@ p {
 
 .dates {
   font-size: 14px;
-  /* margin-bottom: 0;
-  position: relative; */
-  /* left: 275px; */
+  margin-bottom: 0;
 }
 
 .gdskill {
@@ -339,20 +343,39 @@ p {
   font-size: 14px;
 }
 
+.resumeContainer {
+  margin-bottom: 80px;
+
+}
+
 /* contact me */
+
+.contactForm {
+  background-color: rgb(136, 162, 170);
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 40px;
+  padding: 20px;
+}
+
 .contactMe {
   text-align: center;
   padding-bottom: 50px;
 }
 
-.contactMe img {
-  height: 50px;
+.contactImg {
+  height: 70px;
   padding: 2px;
   filter: grayscale(100%);
+  margin: 20px;
 }
 
-.contactMe img:hover {
+.contactImg:hover {
   filter: grayscale(0%);
+}
+
+.contactIcons {
+  text-align: center;
 }
 
 .contactContainer {
@@ -363,9 +386,17 @@ p {
   padding-bottom: 15px;
 }
 
+.contactBtn {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 300;
+  box-shadow: 2px 2px 1px rgb(101, 100, 100);
+}
+
 /* the logo is black so Im not sure how I want to do this */
-#gitimg :hover {
-  filter: drop-shadow(0px 0px 3px black);
+#gitimg:hover {
+  filter: drop-shadow(0px 0px 2px black);
 }
 /* footer */
 footer {
@@ -395,6 +426,12 @@ footer img {
   height: 40px;
   margin: 5px;
   filter: invert(100%);
+}
+
+.contactFooter {
+  position: fixed;
+  bottom: 30px;
+  width: 95%;
 }
 
 @media (max-width: 1200px) {
