@@ -14,11 +14,8 @@ setTimeout(function () {
   typeWriter();
 }, 500);
 
-$("#download").on("click", function (e) {
-  e.preventDefault();
-  window.location.href = "downloads/res.pdf";
-});
-
-$(".carousel").carousel({
-  interval: false,
+$(".submit").on("click", function () {
+  $(".alert").text(
+    "Thanks for getting in touch! I will get back with you as soon as possible!"
+  );
 });
