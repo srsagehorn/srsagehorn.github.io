@@ -18,3 +18,7 @@ $("#download").on("click", function (e) {
   e.preventDefault();
   window.location.href = "downloads/res.pdf";
 });
+
+$(".carousel").carousel({
+  interval: false,
+});
