@@ -184,10 +184,9 @@ p {
 }
 
 .card {
-  width: 100%;
   border-radius: 0;
   border: none;
-  /* height: 350px; */
+  height: 100%;
 }
 
 .card-body {
@@ -228,11 +227,18 @@ i {
 
 .portfolioCard {
   margin-bottom: 80px;
-  height: 500px;
+}
+
+.portHead {
+  position: fixed;
+  top: 125px;
+  z-index: 9998;
 }
 
 .portContainer {
   padding-bottom: 40px;
+  position: relative;
+  top: 150px;
 }
 
 .leave {
@@ -253,28 +259,12 @@ i {
   margin-bottom: 40px;
 }
 
-.vl {
-  border-left: 4px solid #88a2aa;
-  height: 100%;
-  margin-bottom: 40px;
-}
-
 .btn-outline-secondary {
   position: relative;
   left: 50px;
   bottom: 15px;
 }
 
-.dot {
-  height: 15px;
-  width: 15px;
-  border: rgb(136, 162, 170) solid 2px;
-  background-color: white;
-  border-radius: 50%;
-  position: absolute;
-  left: -110px;
-  top: 50px;
-}
 
 .h6 {
   font-weight: 400;
@@ -386,6 +376,7 @@ i {
 
 .contactIcons {
   text-align: center;
+  margin-bottom: 80px;
 }
 
 .contactContainer {
@@ -439,8 +430,7 @@ footer img {
 }
 
 .contactFooter {
-  position: fixed;
-  bottom: 30px;
+  margin-top: 180px;
   width: 95%;
 }
 
@@ -448,12 +438,61 @@ footer img {
   h1 {
     font-size: 50px;
   }
-}
-
-@media (max-width: 1100px) {
-  h1 {
-    font-size: 40px;
+  .nav-link {
+    margin-left: 5px;
   }
 }
 
+@media (max-width: 1100px) {
+  .name {
+    font-size: 38px;
+  }
+  .navbar-brand {
+    margin-right: 0;
+    padding-right: 0;
+  }
+  h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1000px) {
+
+}
+
+@media (max-width: 991px) {
+  h2 {
+    position: relative;
+    top: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    height: 190px;
+  }
+  .name{
+    font-size: 32px;
+  }
+  .navbar-brand {
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .navImg {
+    height: 50px;
+  }
+  main {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
+/* @media (max-wdith: 1000px) {
+.col-md-6 {
+    display: block;
+  }
+
+} */
 /* flex box on the tagline beside photo */
