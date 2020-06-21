@@ -47,17 +47,10 @@ nav {
   filter: invert(100%);
 }
 
-/* .navHidden {
-  font-size: 50px;
-  position: relative;
-  left: 180px;
-  top: -1px;
-  height: 70px;
-} */
-
 .navBtns {
   position: relative;
   right: 10%;
+  top: 8px;
 }
 
 .logoName {
@@ -70,6 +63,14 @@ nav {
   margin-left: 20px;
   font-size: 18px;
   font-weight: 400;
+}
+
+.navbar-toggler {
+  text-align: center;
+}
+
+.menu {
+  height: 30px;
 }
 
 .nav-link:hover {
@@ -86,7 +87,7 @@ nav {
 }
 
 .name {
-  font-size: 50px;
+  font-size: 60px;
   display: inline-block;
   position: relative;
   top: 15px;
@@ -126,10 +127,6 @@ h3 {
 
 .addBtmPadding {
   padding-bottom: 40px;
-}
-
-.navbar-toggler {
-  background-color: black;
 }
 
 .active {
@@ -184,9 +181,9 @@ p {
 }
 
 .card {
-  border-radius: 0;
   border: none;
   height: 100%;
+  padding-bottom: 80px;
 }
 
 .card-body {
@@ -223,10 +220,6 @@ p {
 
 i {
   padding-left: 5px;
-}
-
-.portfolioCard {
-  margin-bottom: 80px;
 }
 
 .portHead {
@@ -434,12 +427,20 @@ footer img {
   width: 95%;
 }
 
+.portFooter {
+  margin-top: 80px;
+}
+
 @media (max-width: 1200px) {
   h1 {
     font-size: 50px;
   }
   .nav-link {
     margin-left: 5px;
+  }
+  .firstln {
+    position: relative;
+    left: 20px;
   }
 }
 
@@ -464,6 +465,14 @@ footer img {
   h2 {
     position: relative;
     top: 0;
+    text-align: center;
+  }
+  .firstln {
+      position: relative;
+      left: 0px;
+  }
+  .imgContainer {
+    text-align: center;
   }
 }
 
@@ -489,10 +498,10 @@ footer img {
 }
 
 
-/* @media (max-wdith: 1000px) {
-.col-md-6 {
-    display: block;
+@media (max-width: 770px) {
+.resPic {
+    position: relative;
+    top: -9px;
   }
-
-} */
+}
 /* flex box on the tagline beside photo */
