@@ -476,6 +476,13 @@ footer img {
   }
 }
 
+@media (max-width: 770px) {
+  .resPic {
+      position: relative;
+      top: -9px;
+    }
+  }
+
 @media (max-width: 650px) {
   .navbar {
     height: 190px;
@@ -495,13 +502,9 @@ footer img {
     padding-left: 15px;
     padding-right: 15px;
   }
-}
 
-
-@media (max-width: 770px) {
-.resPic {
-    position: relative;
-    top: -9px;
+  .card-title {
+    padding-top: 20px ;
   }
 }
 /* flex box on the tagline beside photo */
