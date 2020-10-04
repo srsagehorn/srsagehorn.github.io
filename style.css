@@ -17,20 +17,15 @@ p {
 header {
   background-color: white;
   border-bottom: solid 4px rgb(136, 162, 170);
-}
-
-.navbar {
-  position: fixed;
-  top: -60px;
+  position: fixed !important;
   width: 100%;
   z-index: 9999;
-  padding: 0;
-  padding-top: 60px;
+  padding: 0 !important;
 }
 
-.container {
+/* .container {
   width: 60%;
-}
+} */
 
 .pageContent {
   position: relative;
@@ -47,7 +42,7 @@ header {
 
 .navBtns {
   position: relative;
-  right: 10%;
+  right: 7%;
   top: 8px;
 }
 
@@ -61,6 +56,7 @@ header {
   margin-left: 20px;
   font-size: 18px;
   font-weight: 400;
+  border-bottom: 2px white solid;
 }
 
 .navbar-toggler {
@@ -81,7 +77,7 @@ header {
 }
 
 .name:hover {
-  color:white;
+  color: rgb(136, 162, 170);
   text-decoration: none;
 }
 
@@ -96,31 +92,27 @@ header {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 48px;
   font-weight: 200;
   text-align: right;
   position: relative;
-  right: 100px;
+  right: 120px;
+}
+
+.firstln {
+  text-align: left;
 }
 
 .heading {
   margin-top: auto;
   margin-bottom: auto;
+  position: relative;
+  left: -80px;
 }
 
 .imgContainer {
   text-align: center;
 }
-
-/* .firstln {
-  text-align: left;
-}
-
-.secondln {
-  text-align: right;
-  position: relative;
-  right: 60px;
-} */
 
 .prob {
   font-weight: 800;
@@ -166,12 +158,11 @@ p {
 
 .colorBox {
   background-color: rgb(136, 162, 170);
-padding-bottom: 20px;
-margin-bottom: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .headLiner {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -179,6 +170,10 @@ margin-bottom: 20px;
 .index {
   z-index: 9997;
   width: 60%;
+}
+
+#contactLink {
+  text-decoration: underline;
 }
 
 /* portfolio */
@@ -193,15 +188,7 @@ margin-bottom: 20px;
 
 .colorBlock {
   background-color: white;
-  height: 130px;
-  width: 100%;
-  text-align: center;
-  padding-top: 25px;
-}
-
-.wcolorBlock{
-  background-color: white);
-  height: 130px;
+  height: 100px;
   width: 100%;
   text-align: center;
   padding-top: 25px;
@@ -248,16 +235,8 @@ i {
   padding-left: 5px;
 }
 
-.portHead {
-  position: fixed;
-  top: 125px;
-  z-index: 9998;
-}
-
 .portContainer {
   padding-bottom: 40px;
-  position: relative;
-  top: 150px;
 }
 
 .leave {
@@ -266,9 +245,13 @@ i {
 
 /* resume */
 .resPic {
-  height: 60px;
+  height: 40px;
   position: relative;
   top: 30px;
+}
+
+#download {
+  text-align: right;
 }
 
 .neb {
@@ -281,7 +264,6 @@ i {
   bottom: 15px;
 }
 
-
 .h6 {
   font-weight: 400;
   font-size: 38px;
@@ -293,7 +275,7 @@ i {
 
 .eduHead {
   font-size: 30px;
-  margin-bottom:5px ;
+  margin-bottom: 5px;
 }
 
 .eduHead2 {
@@ -302,8 +284,9 @@ i {
 }
 
 .dates {
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 0;
+  font-style: italic;
 }
 
 .gdskill {
@@ -351,17 +334,22 @@ i {
   margin-top: 60px;
 }
 
+/* .box {
+  background-color: rgb(136, 162, 170);
+  border-radius: 10px;
+} */
+
 .resIcon {
   text-align: center;
 }
 
 .info {
   font-size: 14px;
+  margin-bottom: 0px;
 }
 
 .resumeContainer {
-  margin-bottom: 80px;
-
+  margin-bottom: 110px;
 }
 
 /* contact me */
@@ -391,6 +379,7 @@ i {
 }
 
 .contactIcons {
+  padding-top: 80px;
   text-align: center;
   margin-bottom: 80px;
 }
@@ -413,7 +402,7 @@ i {
 
 /* the logo is black so Im not sure how I want to do this */
 #gitimg:hover {
-  filter: drop-shadow(0px 0px 2px black);
+  filter: drop-shadow(0px 0px 1px black);
 }
 /* footer */
 footer {
@@ -448,6 +437,7 @@ footer img {
 .contactFooter {
   margin-top: 180px;
   width: 95%;
+  position: fixed;
 }
 
 .portFooter {
@@ -460,10 +450,6 @@ footer img {
   }
   .nav-link {
     margin-left: 5px;
-  }
-  .firstln {
-    position: relative;
-    left: 20px;
   }
   .index {
     width: 80%;
@@ -484,7 +470,6 @@ footer img {
 }
 
 @media (max-width: 1000px) {
-
 }
 
 @media (max-width: 991px) {
@@ -495,23 +480,20 @@ footer img {
     position: relative;
     right: 0;
   }
-  .imgContainer {
-    text-align: center;
-  }
 }
 
 @media (max-width: 770px) {
   .resPic {
-      position: relative;
-      top: -9px;
-    }
+    position: relative;
+    top: -9px;
   }
+}
 
 @media (max-width: 650px) {
-  .navbar {
+  header {
     height: 190px;
   }
-  .name{
+  .name {
     font-size: 32px;
   }
   .navbar-brand {
@@ -528,7 +510,7 @@ footer img {
   }
 
   .card-title {
-    padding-top: 20px ;
+    padding-top: 20px;
   }
 }
 /* flex box on the tagline beside photo */
