@@ -13,9 +13,3 @@ function typeWriter() {
 setTimeout(function () {
   typeWriter();
 }, 500);
-
-$(".submit").on("click", function () {
-  $(".alert").text(
-    "Thanks for getting in touch! I will get back with you as soon as possible!"
-  );
-});
