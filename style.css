@@ -23,10 +23,6 @@ header {
   padding: 0 !important;
 }
 
-/* .container {
-  width: 60%;
-} */
-
 .pageContent {
   position: relative;
   top: 130px;
@@ -67,8 +63,12 @@ header {
   height: 30px;
 }
 
-.nav-link:hover {
+#active {
   border-bottom: black solid 2px;
+}
+
+.nav-link:hover {
+  border-bottom: #c2c2c2 solid 2px;
   color: black;
 }
 
@@ -77,7 +77,7 @@ header {
 }
 
 .name:hover {
-  color: rgb(136, 162, 170);
+  color: #51575e;
   text-decoration: none;
 }
 
@@ -182,10 +182,6 @@ p {
   font-weight: 200;
 }
 
-/* .portImg {
-  height: 300px !important;
-} */
-
 .colorBlock {
   background-color: white;
   height: 100px;
@@ -198,6 +194,7 @@ p {
   border: none;
   height: 100%;
   padding-bottom: 80px;
+  background-color: rgb(136, 162, 170);
 }
 
 .card-body {
@@ -207,7 +204,7 @@ p {
 
 .card-title {
   font-family: acumin-pro, sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
   font-size: 26px;
   padding-bottom: 10px;
@@ -237,6 +234,9 @@ i {
 
 .portContainer {
   padding-bottom: 40px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .leave {
@@ -271,6 +271,7 @@ i {
   width: 100%;
   padding: 10px;
   margin-top: 40px;
+  text-align: center;
 }
 
 .eduHead {
@@ -522,4 +523,16 @@ footer img {
     padding-top: 20px;
   }
 }
-/* flex box on the tagline beside photo */
+
+.green {
+  padding-top: 80px;
+  background-color: rgb(136, 162, 170);
+}
+
+.carousel-indicators li {
+  background-color: black;
+}
+
+.carousel-control-prev-icon,  .carousel-control-next-icon{
+  filter: invert(100);
+}
